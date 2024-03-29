@@ -1,0 +1,39 @@
+.contactCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.contactCard:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.delete,
+.edit {
+  font-size: 1.8rem;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  color: #f00;
+  margin-left: 10px;
+}
+
+.edit {
+  color: #1BB0F0;
+}
+
+@media (max-width: 550px) {
+  .contactCard {
+    width: 100%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}

@@ -1,0 +1,91 @@
+.content {
+  width: 100%;
+  position: absolute;
+  background: url(../../../../../assets/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.contentContainer {
+  width: 80%;
+  margin: 100px auto;
+  border: 1px solid #fff;
+  border-radius: 25px;
+}
+
+.personalContent {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.personalContent img {
+  width: 109px;
+  height: 106px;
+  border-radius: 50%;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.pagination span {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pagination span:hover {
+  background-color: #a4d4e8;
+}
+
+.selectedPage {
+  background-color: #ccc;
+}
+
+
+.next,
+.previous {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 550px) {
+
+  .contentContainer {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+  }
+
+  .personalContent img {
+    margin-right: 5px;
+  }
+
+  /* .delete,
+  .edit {
+    font-size: 1rem;
+  } */
+
+}

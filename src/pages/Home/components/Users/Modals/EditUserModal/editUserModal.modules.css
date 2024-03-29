@@ -1,0 +1,115 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  border-radius: 25px;
+  left: 0;
+  top: 0;
+}
+
+.modalHeader {
+  display: grid;
+  place-content: center;
+}
+
+.modalHeader img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  margin: 10px auto;
+  cursor: pointer;
+  color: #000;
+  text-align: center;
+  font-size: 10px;
+}
+
+.formInputs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.formInputs input {
+  width: 40%;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: #eee;
+}
+
+.closeModal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  color: #f00;
+  background: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modalContent {
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  border-radius: 25px;
+  z-index: 99;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 60px 0 0;
+}
+
+input[type="file"] {
+  width: 100%;
+  background-color: #ccc;
+}
+
+.cancel {
+  background-color: #ccc;
+}
+
+.cancel:hover {
+  background-color: #999;
+}
+
+@media (max-width: 600px) {
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .modalHeader img {
+    margin: 10px auto;
+  }
+
+  .formInputs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formInputs input {
+    width: 80%;
+  }
+
+  .buttonsContainer {
+    flex-direction: column;
+  }
+}

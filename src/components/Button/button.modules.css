@@ -1,0 +1,38 @@
+.btnContainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 20px 20px 20px auto;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+}
+
+
+
+.addBtn {
+  width: 217px;
+  height: 61px;
+  background-color: #1BB0F0;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background-color: #51b9e6;
+  color: #fff;
+}
+
+.addIcon {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  left: 15px;
+}
+
+@media (max-width: 550px) {
+  .btnContainer {
+    margin: 20px auto;
+  }
+}
