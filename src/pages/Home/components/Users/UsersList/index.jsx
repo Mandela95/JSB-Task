@@ -5,7 +5,6 @@ import { UserCard } from "../UserCard";
 import Button from "../../../../../components/Button";
 import { AddEditUserModal } from "../Modals/AddEditUserModal";
 import { Search } from "../../../../../components/Search";
-// import { EditUserModal } from "../Modals/EditUserModal";
 
 export const baseUrl = "https://dummyapi.io/data/v1/user";
 
@@ -27,7 +26,6 @@ export function UsersList() {
 
 	useEffect(() => {
 		setIsLoading(true);
-		// async await is better
 		fetch(`${baseUrl}?limit=${limit}&page=${page - 1}`, {
 			method: "GET",
 			headers: {
