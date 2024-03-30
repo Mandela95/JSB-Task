@@ -58,33 +58,14 @@ export function AddEditUserModal({
 		})
 			.then((res) => res.json())
 			.then((data) => {
-				console.log("data", data);
 				onEditSuccess(data);
 				onClose();
 			})
 			.catch((err) => console.log(err));
-
-		// fetch("https://dummyapi.io/data/v1/user/6607425867375e64911b97e5", {
-		// 	method: "PUT",
-		// 	headers: {
-		// 		"app-id": "65fe32f389ba614599da8014",
-		// 		"content-type": "application/json",
-		// 	},
-		// 	body: JSON.stringify({
-		// 		firstName: "lolo",
-		// 		lastName: "lool",
-		// 		email: "dotdottt@dummy.com",
-		// 	}),
-		// })
-		// 	.then((res) => res.json())
-		// 	.then((d) => console.log(d))
-		// 	.catch((e) => console.log(e));
 	};
 
 	const onSubmit = (e) => {
-		console.log("before");
 		e.preventDefault();
-		console.log("after");
 		const validationErrors = {};
 
 		if (!firstName.trim()) {
